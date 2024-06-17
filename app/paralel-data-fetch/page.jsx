@@ -41,8 +41,8 @@ const ParalelDataFetch = async () => {
                 </div>
                 <div className='border shadow-red-800 m-4 p-2 rounded-lg'>
                     {comment.map(item =>
-                        <Link href={`/commentdetail/${item.id}`}>
-                        <div className='border p-3 shadow-md' key={item.id}>{item.email}</div>
+                        <Link key={item.id} href={`/commentdetail/${item.id}`}>
+                                <div className='border p-3 shadow-md'>{item.email}</div>
                         </Link>
                     )}
                 </div>
